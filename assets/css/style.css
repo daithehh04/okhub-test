@@ -14,6 +14,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Montserrat", sans-serif;
+    background: #282B2C;
 }
 /* ---------Common---------- */
 .content {
@@ -29,6 +30,11 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+section {
+    padding-top: 112px;
+}
+
 /* Header */
 
 .header {
@@ -194,8 +200,7 @@ body {
 
 /* Destinations */
 .destinations {
-    padding: 112px 0;
-    background: #282b2c;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 153, 0, 0.15) 0%, rgba(255, 153, 0, 0) 100%);
 }
 
 .destinations .title {
@@ -327,7 +332,7 @@ body {
 
 /* Tours */
 .tours {
-    background: #282b2c;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 102, 255, 0.15) 0%, rgba(0, 102, 255, 0) 100%);
 }
 
 .tours .title {
@@ -508,7 +513,9 @@ body {
 
 /* Connects */
 .connects {
-    padding-top: 112px;
+    padding-bottom: 400px;
+    overflow: hidden;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 153, 0, 0.15) 0%, rgba(255, 153, 0, 0) 100%);
 }
 .connects .connect-top .name-mobile {
     display: none;
@@ -516,11 +523,6 @@ body {
 
 .connects .connect-bottom .img-3 {
     display: none;
-}
-.connects {
-    background: #282b2c;
-    padding-bottom: 400px;
-    overflow: hidden;
 }
 
 .connects .content-2 {

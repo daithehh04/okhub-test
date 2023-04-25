@@ -2,6 +2,9 @@
     .content {
         max-width: calc(100% - 30px);
     }
+    section {
+        padding-top: 64px;
+    }
     /* Header */
     .header .navbar ul {
         display: none;
@@ -24,8 +27,8 @@
         top: 0;
         right: 20px;
         left: 20px;
-        background-color: rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(15px);
         margin: 0 -24px;
         padding: 8px 24px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
@@ -197,9 +200,6 @@
     }
 
     /* Destinations */
-    .destinations {
-        padding: 64px 0;
-    }
     .destinations .title {
         font-size: 2.4rem;
     }
@@ -242,6 +242,9 @@
     }
 
     /* Tours */
+    .tours {
+        overflow: hidden;
+    }
     .tours .title {
         display: none;
     }
@@ -267,6 +270,11 @@
         line-height: 1.21;
         letter-spacing: 0.0025em;
         color: #ffffff;
+        white-space: nowrap;
+    }
+
+    .tours .tours-name li {
+        display: block;
     }
 
     .tours .tab-slide {
@@ -353,7 +361,6 @@
 
     /* Connects */
     .connects {
-        padding-top: 86px;
         padding-bottom: 100px;
     }
 
@@ -364,7 +371,6 @@
     .connects .connect-top .name-mobile {
         margin-bottom: 24px;
         display: block;
-        max-width: 168px;
         font-family: "Poppins";
         font-weight: 700;
         font-size: 2.4rem;
@@ -379,7 +385,8 @@
     }
 
     .connects .connect-top .img-1 {
-        max-width: 290px;
+        width: 100%;
+        max-height: none;
         margin-left: auto;
         margin-right: auto;
     }
@@ -403,8 +410,10 @@
     }
     .connects .connect-bottom .img-3 {
         display: block;
-        max-width: 230px;
-        margin-left: -54px;
+        min-height: 89px;
+        width: 100%;
+        margin-left: -74px;
         border-radius: 8px;
+        object-fit: cover;
     }
 }
