@@ -35,17 +35,29 @@ section {
     padding-top: 112px;
 }
 
+.header .splide__slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
 /* Header */
 
 .header {
     position: relative;
     height: 100vh;
     width: auto;
-    background-image: url("../images/bg-home.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+
+.header .banner {
+    position: absolute;
+    top: 237px;
+}
+
 .header .navbar {
+    position: absolute;
+    top: 0;
+    width: 1240px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,9 +144,9 @@ section {
     color: #000000;
 }
 
-.header .banner .slogan {
+/* .header .banner .slogan {
     padding-top: 115px;
-}
+} */
 
 .header .banner .slogan h1 {
     font-family: var(--font-pop);
@@ -143,6 +155,7 @@ section {
     font-weight: 700;
     line-height: 1.24;
     color: #ffffff;
+    user-select: none;
 }
 .header .banner .slogan span {
     font-size: 10.1rem;
@@ -432,9 +445,9 @@ section {
     background: #ddb152;
 }
 .tours .slides {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 32px; */
     margin-left: 29px;
     overflow: hidden;
 }
@@ -442,6 +455,13 @@ section {
 .tours .slide-item {
     position: relative;
     cursor: pointer;
+    margin-right: 32px;
+    width: auto !important;
+
+}
+
+.tours .slide-item .block {
+    position: absolute;
 }
 
 .tours .slide-item:hover .desc {
@@ -458,6 +478,9 @@ section {
     border-radius: 24px;
 }
 
+.tours .slide-item .block {
+    width: 100%;
+}
 .tours .slide-item .name {
     padding: 0 8px;
     position: absolute;
@@ -489,6 +512,8 @@ section {
 
 .tours .slide-item .desc .text {
     --line-clamp: none;
+    width: 260px;
+    text-align: center;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.21;
@@ -587,4 +612,16 @@ section {
     position: absolute;
     top: 295px;
     left: 252px;
+}
+
+/* ----------Scroll reveal effect--------------- */
+[data-section] > * {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+[data-section].active > * {
+    transform: translateY(0);
+    opacity: 1;
 }

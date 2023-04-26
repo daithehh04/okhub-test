@@ -13,6 +13,10 @@
         display: none;
     }
 
+    .header .banner {
+        top: 86px;
+    }
+
     .header .banner .connect {
         display: none;
     }
@@ -22,7 +26,11 @@
     }
 
     /* Header scroll active */
+    .header .navbar {
+        width: calc(100% - 30px);
+    }
     .header .navbar.active {
+        width: calc(100% + 10px);
         position: fixed;
         top: 0;
         right: 20px;
@@ -351,6 +359,7 @@
     }
 
     .tours .slide-item .desc .text {
+        width: 100%;
         --line-clamp: 2;
     }
     .tours .slide-item .desc img {

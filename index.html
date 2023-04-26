@@ -14,6 +14,10 @@
         rel="stylesheet">
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Splidejs CSS -->
+    <link rel="stylesheet" href="./assets/js/dist/css/splide.min.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Responsive CSS -->
@@ -21,7 +25,19 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header tours animate__animated animate__fadeInDown">
+        <div id="image-carousel" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                          <img src="./assets/images/bg-home-2.avif" alt="">
+                      </li>
+                      <li class="splide__slide">
+                          <img src="./assets/images/bg-home.svg" alt="">
+                      </li>
+                  </ul>
+            </div>
+        </div>
         <div class="content">
             <!-- Navbar -->
             <nav class="navbar">
@@ -142,7 +158,7 @@
             <!-- Banner -->
             <div class="banner">
                 <div class="slogan">
-                    <h1>BEGINS <span>TOUR</span> WITH A SINGLE STEP</h1>
+                    <h1 class=" animate__animated animate__fadeInDown">BEGINS <span>TOUR</span> WITH A SINGLE STEP</h1>
                     <img src="./assets/images/discover.svg" alt="discover">
                 </div>
                 <div class="connect">
@@ -170,7 +186,7 @@
     </header>
     <main>
         <!-- DESTINATIONS -->
-        <section class="destinations">
+        <section class="destinations" data-section>
             <div class="content">
                 <h2 class="title">TOP DESTINATIONS</h2>
                 <ul class="list-item">
@@ -188,7 +204,7 @@
                         </div>
                         <div class="location">
                             <div class="location-top">
-                                <img src="./assets/images/map-pin.svg" alt="">
+                                <img src="./assets/images/map-pin.svg" alt="map">
                                 <h3>Nghe An, Viet Nam</h3>
                             </div>
                             <div class="location-bottom">
@@ -211,7 +227,7 @@
                         </div>
                         <div class="location">
                             <div class="location-top">
-                                <img src="./assets/images/map-pin.svg" alt="">
+                                <img src="./assets/images/map-pin.svg" alt="map">
                                 <h3>Nghe An, Viet Nam</h3>
                             </div>
                             <div class="location-bottom">
@@ -234,7 +250,7 @@
                         </div>
                         <div class="location">
                             <div class="location-top">
-                                <img src="./assets/images/map-pin.svg" alt="">
+                                <img src="./assets/images/map-pin.svg" alt="map">
                                 <h3>Nghe An, Viet Nam</h3>
                             </div>
                             <div class="location-bottom">
@@ -257,7 +273,7 @@
                         </div>
                         <div class="location">
                             <div class="location-top">
-                                <img src="./assets/images/map-pin.svg" alt="">
+                                <img src="./assets/images/map-pin.svg" alt="map">
                                 <h3 class="line-clamp">Nghe An, Viet Nam</h3>
                             </div>
                             <div class="location-bottom">
@@ -280,7 +296,7 @@
                         </div>
                         <div class="location">
                             <div class="location-top">
-                                <img src="./assets/images/map-pin.svg" alt="">
+                                <img src="./assets/images/map-pin.svg" alt="map">
                                 <h3 class="line-clamp">Nghe An, Viet Nam</h3>
                             </div>
                             <div class="location-bottom">
@@ -303,7 +319,7 @@
                         </div>
                         <div class="location">
                             <div class="location-top">
-                                <img src="./assets/images/map-pin.svg" alt="">
+                                <img src="./assets/images/map-pin.svg" alt="map">
                                 <h3>Nghe An, Viet Nam</h3>
                             </div>
                             <div class="location-bottom">
@@ -317,7 +333,7 @@
         </section>
 
         <!-- TOURS & EXPERIENCE -->
-        <section class="tours">
+        <section class="tours" data-section>
             <h2 class="title">TOURS & EXPERIENCE</h2>
             <h2 class="title-mobile">PRODUCT SUPPLY</h2>
             <ul class="tours-name">
@@ -327,28 +343,28 @@
             <div class="tour-list">
                 <div class="tab-slide">
                     <ul>
-                        <li>
+                        <li class="tab-item">
                             <a href="#!" class="active">MOUTAINOUS NORTHERN VIETNAM</a>
                         </li>
-                        <li>
+                        <li class="tab-item">
                             <a href="#!">HANOI & SURROUNDS</a>
                         </li>
-                        <li>
+                        <li class="tab-item">
                             <a href="#!">HALONG BAY, NINH BINH & RED RIVER DELTA</a>
                         </li>
-                        <li>
+                        <li class="tab-item">
                             <a href="#!">CENTRAL VIETNAM</a>
                         </li>
-                        <li>
+                        <li class="tab-item">
                             <a href="#!">CENTRAL HIGHLANDS</a>
                         </li>
-                        <li>
+                        <li class="tab-item">
                             <a href="#!">HO CHI MINH CITY & SURROUNDS</a>
                         </li>
-                        <li>
+                        <li class="tab-item">
                             <a href="#!">MEKONG DELTA</a>
                         </li>
-                        <li>
+                        <li class="tab-item">
                             <a href="#!">BEACHES & ISLANDS</a>
                         </li>
                     </ul>
@@ -356,42 +372,75 @@
                         <img src="./assets/images/tour-line.svg" alt="">
                     </div>
                     <div class="actions">
-                        <img src="./assets/images/narrow-left.svg" alt="">
-                        <img src="./assets/images/narrow-right.svg" alt="">
+                        <img src="./assets/images/narrow-left.svg" alt="" class="left">
+                        <img src="./assets/images/narrow-right.svg" alt="" class="right">
                     </div>
                     <div class="line"></div>
                 </div>
                 <div class="slides">
-                    <div class="slide-item">
-                        <img src="./assets/images/slide-tour.svg" alt="MOUTAINOUS NORTHERN VIETNAM" class="slide-img">
-                        <h4 class="name">MOUTAINOUS NORTHERN VIETNAM</h4>
-                        <div class="desc">
-                            <img src="./assets/images/tour-icon.svg" alt="">
-                            <div class="text line-clamp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                                amet
-                                sint. Velit officia consequat.</div>
+                    <div id="tour-carousel" class="splide" aria-label="Beautiful Images">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <img src="./assets/images/narrow-left.svg" alt="">
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <img src="./assets/images/narrow-right.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="splide__track">
+                              <div class="splide__list">
+                                <div class="slide-item splide__slide">
+                                    <img src="./assets/images/slide-tour.svg" alt="MOUTAINOUS NORTHERN VIETNAM" class="slide-img">
+                                    <div class="block">
+                                        <h4 class="name">MOUTAINOUS NORTHERN VIETNAM</h4>
+                                        <div class="desc">
+                                            <img src="./assets/images/tour-icon.svg" alt="">
+                                            <div class="text line-clamp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                                amet
+                                                sint. Velit officia consequat.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item splide__slide">
+                                    <img src="./assets/images/halong.svg" alt="MOUTAINOUS NORTHERN VIETNAM" class="slide-img">
+                                    <div class="block">
+                                        <h4 class="name">HA LONG BAY</h4>
+                                        <div class="desc">
+                                            <img src="./assets/images/tour-icon.svg" alt="">
+                                            <div class="text line-clamp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                                amet
+                                                sint. Velit officia consequat.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item splide__slide">
+                                    <img src="https://images.unsplash.com/photo-1682418408515-18655b74d784?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="MOUTAINOUS NORTHERN VIETNAM" class="slide-img">
+                                    <div class="block">
+                                        <h4 class="name">HA NOI</h4>
+                                        <div class="desc">
+                                            <img src="./assets/images/tour-icon.svg" alt="">
+                                            <div class="text line-clamp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                                amet
+                                                sint. Velit officia consequat.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item splide__slide">
+                                    <img src="https://images.unsplash.com/photo-1682102230567-25fa2595d9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80" alt="MOUTAINOUS NORTHERN VIETNAM" class="slide-img">
+                                    <div class="block">
+                                        <h4 class="name">CENTRAL VIETNAM</h4>
+                                        <div class="desc">
+                                            <img src="./assets/images/tour-icon.svg" alt="">
+                                            <div class="text line-clamp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                                amet
+                                                sint. Velit officia consequat.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
-                    <div class="slide-item">
-                        <img src="./assets/images/halong.svg" alt="HA LONG BAY" class="slide-img">
-                        <h4 class="name">HA LONG BAY </h4>
-                        <div class="desc">
-                            <img src="./assets/images/tour-icon.svg" alt="">
-                            <div class="text line-clamp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                                amet
-                                sint. Velit officia consequat.</div>
-                        </div>
-                    </div>
-                    <div class="slide-item">
-                        <img src="./assets/images/halong.svg" alt="HA LONG BAY" class="slide-img">
-                        <h4 class="name">HA LONG BAY </h4>
-                        <div class="desc">
-                            <img src="./assets/images/tour-icon.svg" alt="">
-                            <div class="text line-clamp">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                                amet
-                                sint. Velit officia consequat.</div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="actions-mobile">
                     <div class="block">
@@ -404,11 +453,11 @@
         </section>
 
         <!-- CONNECTING & FOLLOWING -->
-        <section class="connects">
+        <section class="connects" data-section>
             <div class="content content-2">
                 <div class="connect-top">
                     <h2 class="name-mobile">CONNECTING &&nbsp;FOLLOWING</h2>
-                    <img src="./assets/images/best-travel-1.svg" alt="" class="img-1">
+                    <img src="./assets/images/best-travel-1.svg" alt="travel image" class="img-1">
                     <div class="connect-info">
                         <h2 class="name">
                             CONNECTING & FOLLOWING
@@ -423,15 +472,15 @@
                     </div>
                 </div>
                 <div class="connect-bottom">
-                    <img src="./assets/images/vietnam.svg" alt="" class="vn-img">
-                    <img src="./assets/images/best-travel-2.svg" alt="" class="img-2">
-                    <img src="./assets/images/best-travel-mb.svg" alt="" class="img-3">
+                    <img src="./assets/images/vietnam.svg" alt="viet nam" class="vn-img">
+                    <img src="./assets/images/best-travel-2.svg" alt="travel image" class="img-2">
+                    <img src="./assets/images/best-travel-mb.svg" alt="travel image" class="img-3">
                 </div>
             </div>
         </section>
     </main>
     <footer></footer>
-
+    <script src="./assets/js/dist/js/splide.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 
