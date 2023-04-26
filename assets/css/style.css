@@ -9,6 +9,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -49,6 +50,10 @@ section {
     width: auto;
 }
 
+/* .header .content {
+    position: absolute;
+    top: 0;
+} */
 .header .banner {
     position: absolute;
     top: 237px;

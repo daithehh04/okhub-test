@@ -54,23 +54,10 @@ document.addEventListener( 'DOMContentLoaded', function () {
     interval: number = 5000,
     arrows: boolean = false
   } );
-
-
-  new Splide( '.splide', {
-    classes: {
-          arrows: 'splide__arrows both-arr',
-          arrow : 'splide__arrow arr',
-          prev  : 'splide__arrow--prev arr-prev',
-          next  : 'splide__arrow--next arr-next',
-    },
-  } );
-
   splide.mount();
 
   const titles = document.querySelectorAll('.tour-list .tab-item');
   const titleLinks = document.querySelectorAll('.tour-list .tab-item a');
-  const images = document.querySelectorAll('.slides .slide-item'); 
-  const slideList = document.querySelector('.slides .splide__list'); 
 
   titles.forEach((title,index) => {
     title.addEventListener('click', () => {
