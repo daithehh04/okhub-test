@@ -28,6 +28,7 @@
     /* Header scroll active */
     .header .navbar {
         width: calc(100% - 30px);
+        max-width: inherit;
     }
     .header .navbar.active {
         width: calc(100% + 10px);
