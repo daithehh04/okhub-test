@@ -31,6 +31,7 @@
     }
     .header .navbar.active {
         width: calc(100% + 10px);
+        max-width: initial;
         position: fixed;
         top: 0;
         right: 20px;
