@@ -56,13 +56,14 @@ section {
 } */
 .header .banner {
     position: absolute;
-    top: 237px;
+    top: 207px;
 }
 
 .header .navbar {
     position: absolute;
     top: 0;
     width: 1240px;
+    max-width: calc(100% - 48px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -170,9 +171,6 @@ section {
     background-clip: text;
 }
 
-.header .banner .slogan img {
-    margin-top: 28px;
-}
 
 .header .banner .connect {
     position: fixed;
